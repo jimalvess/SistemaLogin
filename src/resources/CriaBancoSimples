@@ -1,0 +1,14 @@
+create database SistemaLogin;
+use SistemaLogin;
+
+create table Login (
+	id int auto_increment,
+	usuario varchar(30),
+	senha varchar(12),
+
+	primary key(id)
+);
+
+insert into Login (id, usuario, senha) values (1, 'jim', 123);
+
+select * from Login;
